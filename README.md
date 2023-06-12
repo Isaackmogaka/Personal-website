@@ -10,7 +10,7 @@
    - CSS
    - Javascript
 ## Setup instructions
-- clone repo to vscode https://github.com/Isaackmogaka/My-second-project-week-2.git
+- clone repo to vscode https://isaackmogaka.github.io/Personal-website
 - After cloning, open the project with VS Code and customize to your own     preference
 - git init
 - git add
