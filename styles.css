@@ -1,96 +1,348 @@
-*{
-    margin: 0;
-    padding: 0;
-    /* box-sizing: border-box; */
+
+ * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
-body{
-    background-color: rgb(210, 190, 210);
+a {
+  text-decoration: none;
 }
-img{
-    height: 90px;
-    width: 90px;
-    border-radius:5rem;
-    margin: 8px;
-    
+.hero {
+  width: 100%;
+  height: 100vh;
+  background: url(img/bg.png);
+  background-size: cover;
+  
 }
-nav ul li{
-    list-style: none;
-    display: inline-block;
-    padding: 10px 20px;
-    color: rgb(180, 153, 207);
-    position: relative;
-    font-size: 150%;
-    font-weight: 700;
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px 100px;
+  background-color: #8ec1c7;
 }
-nav ul li a:hover{
-    color: #d88899;
+.logo {
+  height: 90px;
+  width: 90px;
+  border-radius: 4rem;
 }
-.home{
-    float: right;
+nav ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 10px 20px;
 }
-.homenav{
-    background-color: aqua;
-    height: 100px;
-    width: 100vw;
+nav ul li a {
+  color: #1d1d24;
+  position: relative;
+  padding: 5px 0;
 }
-h1{
-    /* color: #fd476f; */
-    padding-bottom: 20px;
-    margin-left: 10px;
-    padding-top: 20px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+nav ul li a:hover {
+  color: #fd4766;
+}
+nav ul li a:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 0;
+  height: 3px;
+  background: #fd4766;
+  transition: 0.3s;
+  bottom: 0;
+}
+nav ul li a:hover:after {
+  width: 100%;
+}
+.btn {
+  color: #fff;
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding: 16px 40px;
+  border-radius: 500px;
+  display: inline-block;
+  font-weight: 500;
+  transition: all 0.4s ease-in-out;
+  background-size: 152% 100%;
+  background: #fd4766;
+  border: 2px solid #fd4766;
+}
+.btn:hover {
+  background: transparent;
+  border-color: #fd4766;
+  color: #fd4766;
+}
+.content {
+  position: absolute;
+  top: 35%;
+  left: 8%;
+}
+.content .title {
+  color: #0a0a0a;
+  font-size: 15px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  display: inline-block;
+  margin-bottom: 20px;
+  background: linear-gradient(
+    120deg,
+    #1c99fe 20.69%,
+    #7644ff 50.19%,
+    #fd4766 79.69%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.content h1 {
+  color: #1f1f25;
+  font-size: 75px;
+  font-weight: 900;
+  line-height: 90px;
+  text-transform: inherit;
+  width: 70%;
+}
+.content h1 span {
+  color: #fd4766;
+}
+.content p {
+  width: 55%;
+  color: #202020;
+  margin-top: 25px;
+  margin-bottom: 30px;
+}
+
+/* ABOUT*/
+
+.about .about-content .left{
+  width: 45%;
+}
+.about .about-content .left img{
+  height: 400px;
+  width: 800px;
+  border-radius: 6px;
+  padding-bottom: 10px;
+}
+.about .about-content .right .text{
+  font-size: 25px;
+  font-weight: 600px;
+  margin-bottom: 40px;
+}
+.about{
+  background-color: #8ec1c7;
 }
 p{
-    font-size: 20px;
-    /* padding-bottom: 100px; */
-    margin-left: 10px;
-    line-height: 40px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  padding-left: 20px;
+  font-size: medium;
+  line-height: 30px;
+  
 }
-  .submit-content button{
-    border: 1px solid #777;
-    border-radius: 1rem;
-    font-family: inherit;
-    font-size: 21px;
-    display: block;
-    width: 100%;
-    margin-top: 50px;
-    margin-bottom: 20px;
-    background-color: #d88899;
-  }
+.text{
+  padding-left: 20px;
+  font-weight: bold;
+  font-family: 'Courier New', Courier, monospace;
+  font-style: normal;
+}
+.title{
+  padding-top: 10px;
+  font-size: xx-large;
+}
+.about .about-content .right a{
+  display: inline-block;
+  background: crimson;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+  padding: 10px 30px;
+  margin-top: 20px;
+  border-radius: 6px;
+  border: 2px solid crimson;
+  transition: all 0.3s ease;
+}
+
+
+/*Services*/
+.services, .teams{
+  color:#fff;
+  background: #5bcfd1;
+}
+.services .serv-content .card{
+  width: calc(33% - 10px);
+  background: #3f8aa3;
+  text-align: center;
+  border-radius: 6px;
+  padding: 50px ;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  padding-left: 15px;
+}
+.services .serv-content .card:hover{
+  background: crimson;
+}
+h2{
+  padding-left: 15px;
+}
+/* 
+Skills */
+.skills .title::after{
+  content: "what i know";
+}
+.skills .skills-content .column{
+  width: calc(50% - 30px);
+}
+.skills .skills-content .left .text{
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.skills .skills-content .left p{
+  text-align: justify;
+}
+.skills .skills-content .left a{
+  display: inline-block;
+  background: crimson;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 8px 16px;
+  margin-top: 20px;
+  border-radius: 6px;
+  border: 2px solid crimson;
+  transition: all 0.3s ease;
+}
+.skills .skills-content .left a:hover{
+  color: crimson;
+  background: none;
+}
+.skills .skills-content .right .bars{
+  margin-bottom: 15px;
+}
+.skills .skills-content .right .info{
+  display: flex;
+  margin-bottom: 5px;
+  align-items: center;
+  justify-content: space-between;
+}
+.skills .skills-content .right span{
+  font-weight: 500;
+  font-size: 18px;
+}
+.skills .skills-content .right .line{
+  height: 5px;
+  width: 100%;
+  background: lightgrey;
+  position: relative;
+}
+.skills .skills-content .right .line::before{
+  content: "";
+  position: absolute;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: crimson;
+}
+.skills-content .right .html::before{
+  width: 90%;
+}
+.skills-content .right .css::before{
+  width: 60%;
+}
+.skills-content .right .js::before{
+  width: 80%;
+}
+.skills-content .right .php::before{
+  width: 50%;
+}
+.skills-content .right .mysql::before{
+  width: 70%;
+}
+/*contacts*/
+.contact{
+  background-color: #8ec1c7;
+}
+.contact .contact-content .column{
+  width: calc(50% - 30px);
+}
+.contact .contact-content .text{
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.contact .contact-content .left p{
+  text-align: justify;
+}
+#text{
   
+  padding-left: 20px;
+  padding-bottom: 10px;
+  padding-bottom: 10px;
+}
+/* .contact .contact-content .left .icons{
+  margin: 10px 0;
+} */
+.contact .contact-content .row{
+  display: flex;
+  height: 65px;
+  align-items: center;
+}
+.contact .contact-content .row .info{
+  margin-left: 30px;
+}
+.contact .contact-content .row i{
+  font-size: 25px;
+  color: crimson;
+}
+.contact .contact-content .info .head{
+  font-weight: 500;
+}
+.contact .contact-content .info .sub-title{
+  color: #333;
+}
+.contact .right form .fields{
+  display: flex;
+}
+.contact .right form .field,
+.contact .right form .fields .field{
+  height: 45px;
+  width: 100%;
+  margin-bottom: 15px;
+  padding-left: 50px;
+}
+.contact .right form .textarea{
+  height: 80px;
+  width: 100%;
+}
+.contact .right form .name{
+  margin-right: 10px;
+}
+.contact .right form .field input,
+.contact .right form .textarea textarea{
+  height: 100%;
+  width: 100%;
+  border: 1px solid lightgrey;
+  border-radius: 6px;
+  outline: none;
+  padding: 0 15px;
+  font-size: 17px;
+  font-family: 'Poppins', sans-serif;
+  transition: all 0.3s ease;
+}
+.right form .button-area button{
+color: #fff;
+display: block;
+width: 160px!important;
+height: 45px;
+outline: none;
+font-size: 18px;
+font-weight: 500;
+border-radius: 6px;
+cursor: pointer;
+flex-wrap: nowrap;
+background: crimson;
+border: 2px solid crimson;
+transition: all 0.3s ease;
+}
+.right form .button-area button:hover{
+color: crimson;
+background: none;
+}
 
-  /* form
-  form {
-    max-width: 250px;
-    margin-left: 20px;
-    padding-bottom: 1px;
-  }
-  .form-control {
-    text-align: left;
-    margin-bottom: 25px;
-  }
-  .form-control label {
-    display: block;
-    margin-bottom: 10px;
-  }
-  .form-control input,
-  .form-control select,
-  .form-control textarea {
-    border: 1px solid #777;
-    border-radius: 2rem;
-    font-family: inherit;
-    padding: 10px;
-    display: block;
-    width: 95%;
-  }
-  .form-control input[type="radio"],
-  .form-control input[type="checkbox"] {
-    display: inline-block;
-    width: auto;
-  }
-  
-
- 
-
- */
