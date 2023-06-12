@@ -1,7 +1,7 @@
 # Personal-website
 - By Isaac Mogaka
 ## Live Link
-- https://isaackmogaka.github.io/My-second-project-week-2/
+- https://isaackmogaka.github.io/Personal-website
 ## Description
 
 ## Technologies used 
