@@ -1,7 +1,7 @@
 # Personal-website
 - By Isaac Mogaka
 ## Live Link
-- https://isaackmogaka.github.io/My-second-project-week-2/
+- https://isaackmogaka.github.io/Personal-website
 ## Description
 
 ## Technologies used 
@@ -10,7 +10,11 @@
    - CSS
    - Javascript
 ## Setup instructions
+<<<<<<< HEAD
 - clone repo to vscode http://isaackmogaka.github.io/Personal-web
+=======
+- clone repo to vscode https://isaackmogaka.github.io/Personal-website
+>>>>>>> 5fdecd13991e05457d96c65d233d122688eb6d94
 - After cloning, open the project with VS Code and customize to your own     preference
 - git init
 - git add
