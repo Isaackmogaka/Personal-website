@@ -181,21 +181,31 @@ p{
 h2{
   padding-left: 15px;
 }
+.bars{
+  padding-left: 30px;
+  border-radius: 1rem;
+  padding-top: 10px;
+}
+#read{
+  padding-left: 20px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+.skills{
+  background-color: #8ec1c7;
+}
+
 /* 
 Skills */
-.skills .title::after{
-  content: "what i know";
-}
+
 .skills .skills-content .column{
   width: calc(50% - 30px);
+  padding-bottom: 6%;
 }
 .skills .skills-content .left .text{
   font-size: 20px;
   font-weight: 600;
   margin-bottom: 10px;
-}
-.skills .skills-content .left p{
-  text-align: justify;
 }
 .skills .skills-content .left a{
   display: inline-block;
@@ -209,10 +219,7 @@ Skills */
   border: 2px solid crimson;
   transition: all 0.3s ease;
 }
-.skills .skills-content .left a:hover{
-  color: crimson;
-  background: none;
-}
+
 .skills .skills-content .right .bars{
   margin-bottom: 15px;
 }
@@ -255,6 +262,8 @@ Skills */
 .skills-content .right .mysql::before{
   width: 70%;
 }
+
+
 /*contacts*/
 .contact{
   background-color: #8ec1c7;
